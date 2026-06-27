@@ -1,3 +1,6 @@
+#to run locally for demos 
+#/opt/anaconda3/bin/streamlit run app.py  // in terminal and then  open http://localhost:8501 in  browser.
+
 import streamlit as st
 import pandas as pd
 import numpy as np
@@ -139,3 +142,5 @@ summary_df = pd.DataFrame({
     'Value':   [csat_score, payment_failures, tenure_months, monthly_logins, support_tickets, last_login_days_ago]
 })
 st.dataframe(summary_df, use_container_width=True, hide_index=True)
+
+
